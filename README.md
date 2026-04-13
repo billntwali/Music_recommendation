@@ -17,30 +17,57 @@ Replace this paragraph with your own summary of what your version does.
 
 ## How The System Works
 
-Real recommendation systems combine collaborative filtering (patterns from similar users) with content signals (attributes of the song or video itself). Platforms like Spotify, YouTube, and TikTok usually generate a pool of candidate items first, then rank that pool with many engagement signals (likes, skips, watch time, and history). In this simulator, I will prioritize a transparent content-based approach so each recommendation can be explained clearly.
+Major platforms usually combine collaborative filtering (patterns from similar users) and content-based filtering (matching item attributes). This simulation focuses on a transparent content-based design so each recommendation can be traced to clear rules.
 
-Features used in each `Song`:
-- `genre`
-- `mood`
-- `energy`
-- `tempo_bpm`
-- `valence`
-- `danceability`
-- `acousticness`
+Catalog design:
+- `data/songs.csv` now has 18 songs.
+- Added genres include `hip hop`, `classical`, `country`, `afrobeats`, `metal`, `reggaeton`, `house`, and `rnb`.
+- Added moods include `confident`, `calm`, `nostalgic`, `euphoric`, `aggressive`, `playful`, `dreamy`, and `romantic`.
+- Song features used: `genre`, `mood`, `energy`, `tempo_bpm`, `valence`, `danceability`, `acousticness`.
 
-Features used in `UserProfile` (planned for this simulation):
-- `favorite_genre`
-- `favorite_mood`
-- `target_energy`
-- `target_valence`
-- `preferred_tempo_bpm`
-- `likes_acoustic`
+User profile used for comparisons:
 
-Algorithm recipe (Phase 1 draft):
-- Use a weighted score per song (genre match + mood match + numeric closeness for energy/valence/tempo).
-- For numeric fields, reward closeness with `1 - normalized_distance` so songs nearer the target score higher.
-- Apply larger weights to genre and mood than tempo so vibe identity matters most.
-- Rank songs by total score (highest first) and return the top `k`.
+```python
+user_profile = {
+    "favorite_genre": "lofi",
+    "favorite_mood": "chill",
+    "target_energy": 0.40,
+    "target_valence": 0.62,
+    "preferred_tempo_bpm": 82,
+    "likes_acoustic": True
+}
+```
+
+Profile critique summary:
+- This profile is broad enough to separate `intense rock` from `chill lofi` because it combines categorical matches (`genre`, `mood`) with numeric closeness (`energy`, `tempo_bpm`, `valence`).
+
+Algorithm Recipe:
+- `+2.0` if `genre` matches favorite genre.
+- `+1.0` if `mood` matches favorite mood.
+- `+2.0 * (1 - abs(song_energy - target_energy))` for energy closeness.
+- `+1.0 * (1 - abs(song_valence - target_valence))` for valence closeness.
+- `+0.75 * (1 - min(abs(song_tempo_bpm - preferred_tempo_bpm) / 110, 1))` for tempo closeness.
+- `+0.5` if `likes_acoustic` is `True` and `acousticness >= 0.60`; otherwise `+0.0`.
+
+Ranking Rule:
+- Score every song with the formula above.
+- Sort by score from highest to lowest.
+- Return top `k` songs (default `k=5`).
+
+Data flow map:
+
+```mermaid
+flowchart LR
+    A[Input: User Profile] --> B[Load songs.csv]
+    B --> C[Loop through each song]
+    C --> D[Apply scoring rule]
+    D --> E[Store song + score + reasons]
+    E --> F[Sort by score descending]
+    F --> G[Output: Top K recommendations]
+```
+
+Potential bias note:
+- This setup may over-prioritize genre and miss cross-genre songs with a matching vibe; it can also favor songs near the user target energy range and under-rank intentionally contrasting tracks.
 
 ---
 
