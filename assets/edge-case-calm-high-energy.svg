@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="708" viewBox="0 0 2400 708">
+  <rect width="2400" height="100%" fill="#111827"/>
+  <rect x="0" y="0" width="2400" height="44" fill="#1f2937"/>
+  <circle cx="24" cy="22" r="6" fill="#ef4444"/>
+  <circle cx="44" cy="22" r="6" fill="#f59e0b"/>
+  <circle cx="64" cy="22" r="6" fill="#10b981"/>
+  <text x="90" y="27" fill="#d1d5db" font-size="18" font-family="Menlo, Consolas, Monaco, monospace">assets/edge-case-calm-high-energy recommendations</text>
+  <g fill="#e5e7eb" font-size="20" font-family="Menlo, Consolas, Monaco, monospace">
+    <text x="20" y="80">1. Ocean Lantern - Blue Reverie</text>
+    <text x="20" y="108">   Score: 5.02</text>
+    <text x="20" y="136">   Reasons: genre match (+2.00); mood match (+1.00); energy closeness (+0.60); valence closeness (+0.82); tempo closeness (+0.10); acoustic preference match (+0.50)</text>
+    <text x="20" y="164">------------------------------------------------------------------------</text>
+    <text x="20" y="192">2. Storm Runner - Voltline</text>
+    <text x="20" y="220">   Score: 3.60</text>
+    <text x="20" y="248">   Reasons: energy closeness (+1.98); valence closeness (+0.92); tempo closeness (+0.70)</text>
+    <text x="20" y="276">------------------------------------------------------------------------</text>
+    <text x="20" y="304">3. Iron Static - Black Forge</text>
+    <text x="20" y="332">   Score: 3.56</text>
+    <text x="20" y="360">   Reasons: energy closeness (+1.94); valence closeness (+0.94); tempo closeness (+0.68)</text>
+    <text x="20" y="388">------------------------------------------------------------------------</text>
+    <text x="20" y="416">4. Gym Hero - Max Pulse</text>
+    <text x="20" y="444">   Score: 3.17</text>
+    <text x="20" y="472">   Reasons: energy closeness (+1.98); valence closeness (+0.63); tempo closeness (+0.56)</text>
+    <text x="20" y="500">------------------------------------------------------------------------</text>
+    <text x="20" y="528">5. Night Drive Loop - Neon Echo</text>
+    <text x="20" y="556">   Score: 2.98</text>
+    <text x="20" y="584">   Reasons: energy closeness (+1.66); valence closeness (+0.91); tempo closeness (+0.41)</text>
+    <text x="20" y="612">------------------------------------------------------------------------</text>
+    <text x="20" y="640"></text>
+  </g>
+</svg>

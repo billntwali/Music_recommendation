@@ -1,0 +1,20 @@
+1. Sunrise City - Neon Echo
+   Score: 7.46
+   Reasons: genre match (+1.00); mood match (+1.00); energy closeness (+3.76); valence closeness (+1.00); tempo closeness (+0.70)
+------------------------------------------------------------------------
+2. Gym Hero - Max Pulse
+   Score: 6.44
+   Reasons: genre match (+1.00); energy closeness (+3.80); valence closeness (+0.93); tempo closeness (+0.71)
+------------------------------------------------------------------------
+3. Rooftop Lights - Indigo Parade
+   Score: 6.23
+   Reasons: mood match (+1.00); energy closeness (+3.52); valence closeness (+0.97); tempo closeness (+0.74)
+------------------------------------------------------------------------
+4. Golden Hour Pulse - Solar Kidi
+   Score: 5.63
+   Reasons: energy closeness (+4.00); valence closeness (+0.98); tempo closeness (+0.65)
+------------------------------------------------------------------------
+5. Barrio Neon - Luna Calle
+   Score: 5.47
+   Reasons: energy closeness (+3.92); valence closeness (+0.99); tempo closeness (+0.56)
+------------------------------------------------------------------------

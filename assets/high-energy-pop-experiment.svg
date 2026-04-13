@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="680" viewBox="0 0 2400 680">
+  <rect width="2400" height="100%" fill="#111827"/>
+  <rect x="0" y="0" width="2400" height="44" fill="#1f2937"/>
+  <circle cx="24" cy="22" r="6" fill="#ef4444"/>
+  <circle cx="44" cy="22" r="6" fill="#f59e0b"/>
+  <circle cx="64" cy="22" r="6" fill="#10b981"/>
+  <text x="90" y="27" fill="#d1d5db" font-size="18" font-family="Menlo, Consolas, Monaco, monospace">assets/high-energy-pop-experiment recommendations</text>
+  <g fill="#e5e7eb" font-size="20" font-family="Menlo, Consolas, Monaco, monospace">
+    <text x="20" y="80">1. Sunrise City - Neon Echo</text>
+    <text x="20" y="108">   Score: 7.46</text>
+    <text x="20" y="136">   Reasons: genre match (+1.00); mood match (+1.00); energy closeness (+3.76); valence closeness (+1.00); tempo closeness (+0.70)</text>
+    <text x="20" y="164">------------------------------------------------------------------------</text>
+    <text x="20" y="192">2. Gym Hero - Max Pulse</text>
+    <text x="20" y="220">   Score: 6.44</text>
+    <text x="20" y="248">   Reasons: genre match (+1.00); energy closeness (+3.80); valence closeness (+0.93); tempo closeness (+0.71)</text>
+    <text x="20" y="276">------------------------------------------------------------------------</text>
+    <text x="20" y="304">3. Rooftop Lights - Indigo Parade</text>
+    <text x="20" y="332">   Score: 6.23</text>
+    <text x="20" y="360">   Reasons: mood match (+1.00); energy closeness (+3.52); valence closeness (+0.97); tempo closeness (+0.74)</text>
+    <text x="20" y="388">------------------------------------------------------------------------</text>
+    <text x="20" y="416">4. Golden Hour Pulse - Solar Kidi</text>
+    <text x="20" y="444">   Score: 5.63</text>
+    <text x="20" y="472">   Reasons: energy closeness (+4.00); valence closeness (+0.98); tempo closeness (+0.65)</text>
+    <text x="20" y="500">------------------------------------------------------------------------</text>
+    <text x="20" y="528">5. Barrio Neon - Luna Calle</text>
+    <text x="20" y="556">   Score: 5.47</text>
+    <text x="20" y="584">   Reasons: energy closeness (+3.92); valence closeness (+0.99); tempo closeness (+0.56)</text>
+    <text x="20" y="612">------------------------------------------------------------------------</text>
+  </g>
+</svg>

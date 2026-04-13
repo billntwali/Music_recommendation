@@ -1,0 +1,21 @@
+1. Storm Runner - Voltline
+   Score: 6.69
+   Reasons: genre match (+2.00); mood match (+1.00); energy closeness (+1.98); valence closeness (+0.97); tempo closeness (+0.74)
+------------------------------------------------------------------------
+2. Gym Hero - Max Pulse
+   Score: 4.29
+   Reasons: mood match (+1.00); energy closeness (+1.98); valence closeness (+0.68); tempo closeness (+0.63)
+------------------------------------------------------------------------
+3. Iron Static - Black Forge
+   Score: 3.44
+   Reasons: energy closeness (+1.94); valence closeness (+0.89); tempo closeness (+0.61)
+------------------------------------------------------------------------
+4. Night Drive Loop - Neon Echo
+   Score: 3.10
+   Reasons: energy closeness (+1.66); valence closeness (+0.96); tempo closeness (+0.48)
+------------------------------------------------------------------------
+5. City Prism - Velvet Circuit
+   Score: 3.08
+   Reasons: energy closeness (+1.78); valence closeness (+0.71); tempo closeness (+0.59)
+------------------------------------------------------------------------
+

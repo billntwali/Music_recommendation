@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="708" viewBox="0 0 2400 708">
+  <rect width="2400" height="100%" fill="#111827"/>
+  <rect x="0" y="0" width="2400" height="44" fill="#1f2937"/>
+  <circle cx="24" cy="22" r="6" fill="#ef4444"/>
+  <circle cx="44" cy="22" r="6" fill="#f59e0b"/>
+  <circle cx="64" cy="22" r="6" fill="#10b981"/>
+  <text x="90" y="27" fill="#d1d5db" font-size="18" font-family="Menlo, Consolas, Monaco, monospace">assets/chill-lofi recommendations</text>
+  <g fill="#e5e7eb" font-size="20" font-family="Menlo, Consolas, Monaco, monospace">
+    <text x="20" y="80">1. Library Rain - Paper Lanterns</text>
+    <text x="20" y="108">   Score: 7.13</text>
+    <text x="20" y="136">   Reasons: genre match (+2.00); mood match (+1.00); energy closeness (+1.94); valence closeness (+0.98); tempo closeness (+0.71); acoustic preference match (+0.50)</text>
+    <text x="20" y="164">------------------------------------------------------------------------</text>
+    <text x="20" y="192">2. Midnight Coding - LoRoom</text>
+    <text x="20" y="220">   Score: 7.11</text>
+    <text x="20" y="248">   Reasons: genre match (+2.00); mood match (+1.00); energy closeness (+1.92); valence closeness (+0.94); tempo closeness (+0.75); acoustic preference match (+0.50)</text>
+    <text x="20" y="276">------------------------------------------------------------------------</text>
+    <text x="20" y="304">3. Focus Flow - LoRoom</text>
+    <text x="20" y="332">   Score: 6.17</text>
+    <text x="20" y="360">   Reasons: genre match (+2.00); energy closeness (+1.96); valence closeness (+0.97); tempo closeness (+0.74); acoustic preference match (+0.50)</text>
+    <text x="20" y="388">------------------------------------------------------------------------</text>
+    <text x="20" y="416">4. Spacewalk Thoughts - Orbit Bloom</text>
+    <text x="20" y="444">   Score: 4.90</text>
+    <text x="20" y="472">   Reasons: mood match (+1.00); energy closeness (+1.80); valence closeness (+0.97); tempo closeness (+0.63); acoustic preference match (+0.50)</text>
+    <text x="20" y="500">------------------------------------------------------------------------</text>
+    <text x="20" y="528">5. Coffee Shop Stories - Slow Stereo</text>
+    <text x="20" y="556">   Score: 4.06</text>
+    <text x="20" y="584">   Reasons: energy closeness (+1.98); valence closeness (+0.91); tempo closeness (+0.67); acoustic preference match (+0.50)</text>
+    <text x="20" y="612">------------------------------------------------------------------------</text>
+    <text x="20" y="640"></text>
+  </g>
+</svg>

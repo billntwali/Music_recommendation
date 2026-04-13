@@ -109,6 +109,14 @@ def score_song(user_prefs: Dict, song: Dict) -> Tuple[float, List[str]]:
     """Compute one song's weighted score and explanation reasons."""
     score = 0.0
     reasons: List[str] = []
+    weights = user_prefs.get("weights", {})
+
+    genre_weight = _to_float(weights.get("genre", 2.0), default=2.0)
+    mood_weight = _to_float(weights.get("mood", 1.0), default=1.0)
+    energy_weight = _to_float(weights.get("energy", 2.0), default=2.0)
+    valence_weight = _to_float(weights.get("valence", 1.0), default=1.0)
+    tempo_weight = _to_float(weights.get("tempo", 0.75), default=0.75)
+    acoustic_bonus = _to_float(weights.get("acoustic_bonus", 0.5), default=0.5)
 
     favorite_genre = (user_prefs.get("favorite_genre") or user_prefs.get("genre") or "").strip().lower()
     favorite_mood = (user_prefs.get("favorite_mood") or user_prefs.get("mood") or "").strip().lower()
@@ -116,17 +124,17 @@ def score_song(user_prefs: Dict, song: Dict) -> Tuple[float, List[str]]:
     song_mood = str(song.get("mood", "")).strip().lower()
 
     if favorite_genre and song_genre == favorite_genre:
-        score += 2.0
-        reasons.append("genre match (+2.00)")
+        score += genre_weight
+        reasons.append(f"genre match (+{genre_weight:.2f})")
 
     if favorite_mood and song_mood == favorite_mood:
-        score += 1.0
-        reasons.append("mood match (+1.00)")
+        score += mood_weight
+        reasons.append(f"mood match (+{mood_weight:.2f})")
 
     target_energy = _to_float(user_prefs.get("target_energy", user_prefs.get("energy", 0.5)), default=0.5)
     energy = _to_float(song.get("energy"), default=0.5)
     energy_similarity = max(0.0, 1.0 - abs(energy - target_energy))
-    energy_points = 2.0 * energy_similarity
+    energy_points = energy_weight * energy_similarity
     score += energy_points
     reasons.append(f"energy closeness (+{energy_points:.2f})")
 
@@ -134,7 +142,7 @@ def score_song(user_prefs: Dict, song: Dict) -> Tuple[float, List[str]]:
         target_valence = _to_float(user_prefs.get("target_valence", user_prefs.get("valence", 0.5)), default=0.5)
         valence = _to_float(song.get("valence"), default=0.5)
         valence_similarity = max(0.0, 1.0 - abs(valence - target_valence))
-        valence_points = 1.0 * valence_similarity
+        valence_points = valence_weight * valence_similarity
         score += valence_points
         reasons.append(f"valence closeness (+{valence_points:.2f})")
 
@@ -142,14 +150,14 @@ def score_song(user_prefs: Dict, song: Dict) -> Tuple[float, List[str]]:
         preferred_tempo = _to_float(user_prefs.get("preferred_tempo_bpm", user_prefs.get("tempo_bpm", 110)), default=110.0)
         tempo = _to_float(song.get("tempo_bpm"), default=110.0)
         tempo_similarity = max(0.0, 1.0 - min(abs(tempo - preferred_tempo) / 110.0, 1.0))
-        tempo_points = 0.75 * tempo_similarity
+        tempo_points = tempo_weight * tempo_similarity
         score += tempo_points
         reasons.append(f"tempo closeness (+{tempo_points:.2f})")
 
     likes_acoustic = _to_bool(user_prefs.get("likes_acoustic", False))
     if likes_acoustic and _to_float(song.get("acousticness"), default=0.0) >= 0.60:
-        score += 0.5
-        reasons.append("acoustic preference match (+0.50)")
+        score += acoustic_bonus
+        reasons.append(f"acoustic preference match (+{acoustic_bonus:.2f})")
 
     return score, reasons
 

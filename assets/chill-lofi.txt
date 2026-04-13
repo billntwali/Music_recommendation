@@ -1,0 +1,21 @@
+1. Library Rain - Paper Lanterns
+   Score: 7.13
+   Reasons: genre match (+2.00); mood match (+1.00); energy closeness (+1.94); valence closeness (+0.98); tempo closeness (+0.71); acoustic preference match (+0.50)
+------------------------------------------------------------------------
+2. Midnight Coding - LoRoom
+   Score: 7.11
+   Reasons: genre match (+2.00); mood match (+1.00); energy closeness (+1.92); valence closeness (+0.94); tempo closeness (+0.75); acoustic preference match (+0.50)
+------------------------------------------------------------------------
+3. Focus Flow - LoRoom
+   Score: 6.17
+   Reasons: genre match (+2.00); energy closeness (+1.96); valence closeness (+0.97); tempo closeness (+0.74); acoustic preference match (+0.50)
+------------------------------------------------------------------------
+4. Spacewalk Thoughts - Orbit Bloom
+   Score: 4.90
+   Reasons: mood match (+1.00); energy closeness (+1.80); valence closeness (+0.97); tempo closeness (+0.63); acoustic preference match (+0.50)
+------------------------------------------------------------------------
+5. Coffee Shop Stories - Slow Stereo
+   Score: 4.06
+   Reasons: energy closeness (+1.98); valence closeness (+0.91); tempo closeness (+0.67); acoustic preference match (+0.50)
+------------------------------------------------------------------------
+

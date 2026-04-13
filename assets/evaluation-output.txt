@@ -1,0 +1,115 @@
+Loaded songs: 18
+
+Stress Test Recommendations:
+
+=== High-Energy Pop ===
+1. Sunrise City - Neon Echo
+   Score: 6.58
+   Reasons: genre match (+2.00); mood match (+1.00); energy closeness (+1.88); valence closeness (+1.00); tempo closeness (+0.70)
+------------------------------------------------------------------------
+2. Gym Hero - Max Pulse
+   Score: 5.54
+   Reasons: genre match (+2.00); energy closeness (+1.90); valence closeness (+0.93); tempo closeness (+0.71)
+------------------------------------------------------------------------
+3. Rooftop Lights - Indigo Parade
+   Score: 4.47
+   Reasons: mood match (+1.00); energy closeness (+1.76); valence closeness (+0.97); tempo closeness (+0.74)
+------------------------------------------------------------------------
+4. Golden Hour Pulse - Solar Kidi
+   Score: 3.63
+   Reasons: energy closeness (+2.00); valence closeness (+0.98); tempo closeness (+0.65)
+------------------------------------------------------------------------
+5. City Prism - Velvet Circuit
+   Score: 3.51
+   Reasons: energy closeness (+1.86); valence closeness (+0.90); tempo closeness (+0.75)
+------------------------------------------------------------------------
+
+=== Chill Lofi ===
+1. Library Rain - Paper Lanterns
+   Score: 7.13
+   Reasons: genre match (+2.00); mood match (+1.00); energy closeness (+1.94); valence closeness (+0.98); tempo closeness (+0.71); acoustic preference match (+0.50)
+------------------------------------------------------------------------
+2. Midnight Coding - LoRoom
+   Score: 7.11
+   Reasons: genre match (+2.00); mood match (+1.00); energy closeness (+1.92); valence closeness (+0.94); tempo closeness (+0.75); acoustic preference match (+0.50)
+------------------------------------------------------------------------
+3. Focus Flow - LoRoom
+   Score: 6.17
+   Reasons: genre match (+2.00); energy closeness (+1.96); valence closeness (+0.97); tempo closeness (+0.74); acoustic preference match (+0.50)
+------------------------------------------------------------------------
+4. Spacewalk Thoughts - Orbit Bloom
+   Score: 4.90
+   Reasons: mood match (+1.00); energy closeness (+1.80); valence closeness (+0.97); tempo closeness (+0.63); acoustic preference match (+0.50)
+------------------------------------------------------------------------
+5. Coffee Shop Stories - Slow Stereo
+   Score: 4.06
+   Reasons: energy closeness (+1.98); valence closeness (+0.91); tempo closeness (+0.67); acoustic preference match (+0.50)
+------------------------------------------------------------------------
+
+=== Deep Intense Rock ===
+1. Storm Runner - Voltline
+   Score: 6.69
+   Reasons: genre match (+2.00); mood match (+1.00); energy closeness (+1.98); valence closeness (+0.97); tempo closeness (+0.74)
+------------------------------------------------------------------------
+2. Gym Hero - Max Pulse
+   Score: 4.29
+   Reasons: mood match (+1.00); energy closeness (+1.98); valence closeness (+0.68); tempo closeness (+0.63)
+------------------------------------------------------------------------
+3. Iron Static - Black Forge
+   Score: 3.44
+   Reasons: energy closeness (+1.94); valence closeness (+0.89); tempo closeness (+0.61)
+------------------------------------------------------------------------
+4. Night Drive Loop - Neon Echo
+   Score: 3.10
+   Reasons: energy closeness (+1.66); valence closeness (+0.96); tempo closeness (+0.48)
+------------------------------------------------------------------------
+5. City Prism - Velvet Circuit
+   Score: 3.08
+   Reasons: energy closeness (+1.78); valence closeness (+0.71); tempo closeness (+0.59)
+------------------------------------------------------------------------
+
+=== Edge Case: Calm + Very High Energy ===
+1. Ocean Lantern - Blue Reverie
+   Score: 5.02
+   Reasons: genre match (+2.00); mood match (+1.00); energy closeness (+0.60); valence closeness (+0.82); tempo closeness (+0.10); acoustic preference match (+0.50)
+------------------------------------------------------------------------
+2. Storm Runner - Voltline
+   Score: 3.60
+   Reasons: energy closeness (+1.98); valence closeness (+0.92); tempo closeness (+0.70)
+------------------------------------------------------------------------
+3. Iron Static - Black Forge
+   Score: 3.56
+   Reasons: energy closeness (+1.94); valence closeness (+0.94); tempo closeness (+0.68)
+------------------------------------------------------------------------
+4. Gym Hero - Max Pulse
+   Score: 3.17
+   Reasons: energy closeness (+1.98); valence closeness (+0.63); tempo closeness (+0.56)
+------------------------------------------------------------------------
+5. Night Drive Loop - Neon Echo
+   Score: 2.98
+   Reasons: energy closeness (+1.66); valence closeness (+0.91); tempo closeness (+0.41)
+------------------------------------------------------------------------
+
+Experiment: High-Energy Pop with weight shift (energy x2, genre x0.5)
+
+=== High-Energy Pop (Experimental Weights) ===
+1. Sunrise City - Neon Echo
+   Score: 7.46
+   Reasons: genre match (+1.00); mood match (+1.00); energy closeness (+3.76); valence closeness (+1.00); tempo closeness (+0.70)
+------------------------------------------------------------------------
+2. Gym Hero - Max Pulse
+   Score: 6.44
+   Reasons: genre match (+1.00); energy closeness (+3.80); valence closeness (+0.93); tempo closeness (+0.71)
+------------------------------------------------------------------------
+3. Rooftop Lights - Indigo Parade
+   Score: 6.23
+   Reasons: mood match (+1.00); energy closeness (+3.52); valence closeness (+0.97); tempo closeness (+0.74)
+------------------------------------------------------------------------
+4. Golden Hour Pulse - Solar Kidi
+   Score: 5.63
+   Reasons: energy closeness (+4.00); valence closeness (+0.98); tempo closeness (+0.65)
+------------------------------------------------------------------------
+5. Barrio Neon - Luna Calle
+   Score: 5.47
+   Reasons: energy closeness (+3.92); valence closeness (+0.99); tempo closeness (+0.56)
+------------------------------------------------------------------------

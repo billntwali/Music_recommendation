@@ -1,0 +1,21 @@
+1. Ocean Lantern - Blue Reverie
+   Score: 5.02
+   Reasons: genre match (+2.00); mood match (+1.00); energy closeness (+0.60); valence closeness (+0.82); tempo closeness (+0.10); acoustic preference match (+0.50)
+------------------------------------------------------------------------
+2. Storm Runner - Voltline
+   Score: 3.60
+   Reasons: energy closeness (+1.98); valence closeness (+0.92); tempo closeness (+0.70)
+------------------------------------------------------------------------
+3. Iron Static - Black Forge
+   Score: 3.56
+   Reasons: energy closeness (+1.94); valence closeness (+0.94); tempo closeness (+0.68)
+------------------------------------------------------------------------
+4. Gym Hero - Max Pulse
+   Score: 3.17
+   Reasons: energy closeness (+1.98); valence closeness (+0.63); tempo closeness (+0.56)
+------------------------------------------------------------------------
+5. Night Drive Loop - Neon Echo
+   Score: 2.98
+   Reasons: energy closeness (+1.66); valence closeness (+0.91); tempo closeness (+0.41)
+------------------------------------------------------------------------
+
