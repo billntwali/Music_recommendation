@@ -69,9 +69,37 @@ flowchart LR
 Potential bias note:
 - This setup may over-prioritize genre and miss cross-genre songs with a matching vibe; it can also favor songs near the user target energy range and under-rank intentionally contrasting tracks.
 
-CLI output screenshot:
+Stress-test profiles used:
+- `High-Energy Pop`
+- `Chill Lofi`
+- `Deep Intense Rock`
+- `Edge Case: Calm + Very High Energy` (adversarial/conflicting profile)
 
-![CLI recommendations snapshot](assets/cli-output.svg)
+Terminal recommendation screenshots:
+
+High-Energy Pop
+![High-Energy Pop recommendations](assets/high-energy-pop.svg)
+
+Chill Lofi
+![Chill Lofi recommendations](assets/chill-lofi.svg)
+
+Deep Intense Rock
+![Deep Intense Rock recommendations](assets/deep-intense-rock.svg)
+
+Edge Case: Calm + Very High Energy
+![Edge case recommendations](assets/edge-case-calm-high-energy.svg)
+
+Accuracy and surprise notes:
+- `Chill Lofi` felt accurate: all top 3 results were lofi/chill tracks with high acousticness.
+- `Deep Intense Rock` put `Storm Runner` first, which matches intuition because it got points from `genre`, `mood`, and very close `energy`/`tempo`/`valence`.
+- The edge-case profile still ranked `Ocean Lantern` first even with very high target energy, because exact `genre` + `mood` match outweighed the large energy mismatch.
+
+Weight-shift experiment:
+- Change tested: doubled `energy` weight and halved `genre` weight.
+- Outcome: `Barrio Neon` entered the top 5 for `High-Energy Pop`, showing the system became more "energy-driven" and less genre-locked.
+
+Experiment screenshot:
+![High-Energy Pop experiment recommendations](assets/high-energy-pop-experiment.svg)
 
 ---
 

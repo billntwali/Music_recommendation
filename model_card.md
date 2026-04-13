@@ -61,29 +61,13 @@ Prompts:
 
 ## 6. Limitations and Bias 
 
-Where the system struggles or behaves unfairly. 
-
-Prompts:  
-
-- Features it does not consider  
-- Genres or moods that are underrepresented  
-- Cases where the system overfits to one preference  
-- Ways the scoring might unintentionally favor some users  
+This recommender can create a small filter bubble because exact `genre` and `mood` matches are rewarded strongly and repeatedly. During stress tests, songs with perfect categorical matches often stayed near the top even when their numeric vibe (especially energy) was not ideal. The edge-case profile (`calm` mood with very high energy) exposed this: a calm classical song still ranked first mostly due to category matching, even though its energy was far from the target. Another limitation is catalog coverage: with only 18 songs, a few tracks appear in multiple profiles simply because there are not many alternatives at each mood/energy combination. Finally, the model ignores lyrical themes, language, and cultural context, so it may miss what users actually mean by a "deep" or "intense" track.
 
 ---
 
 ## 7. Evaluation  
 
-How you checked whether the recommender behaved as expected. 
-
-Prompts:  
-
-- Which user profiles you tested  
-- What you looked for in the recommendations  
-- What surprised you  
-- Any simple tests or comparisons you ran  
-
-No need for numeric metrics unless you created some.
+I evaluated the system by running four profiles: `High-Energy Pop`, `Chill Lofi`, `Deep Intense Rock`, and an adversarial profile (`Edge Case: Calm + Very High Energy`). For each run, I inspected the top 5 songs and checked whether the reasons matched the expected vibe. Results mostly made sense: `Library Rain` and `Midnight Coding` rose to the top for `Chill Lofi`, while `Storm Runner` ranked first for `Deep Intense Rock` due to strong genre+mood+energy alignment. The most surprising output came from the edge case, where `Ocean Lantern` ranked first despite low energy, showing that categorical matches can dominate numeric mismatch. I also ran a sensitivity experiment (double energy weight, half genre weight) and saw `Barrio Neon` enter the `High-Energy Pop` top 5, confirming the model is sensitive to weighting choices rather than fixed song identity.
 
 ---
 
