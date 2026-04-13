@@ -69,6 +69,10 @@ flowchart LR
 Potential bias note:
 - This setup may over-prioritize genre and miss cross-genre songs with a matching vibe; it can also favor songs near the user target energy range and under-rank intentionally contrasting tracks.
 
+CLI output screenshot:
+
+![CLI recommendations snapshot](assets/cli-output.svg)
+
 ---
 
 ## Getting Started

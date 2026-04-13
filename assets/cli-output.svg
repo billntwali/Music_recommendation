@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="760" viewBox="0 0 1700 760">
+  <rect width="1700" height="760" fill="#111827"/>
+  <rect x="0" y="0" width="1700" height="44" fill="#1f2937"/>
+  <circle cx="24" cy="22" r="6" fill="#ef4444"/>
+  <circle cx="44" cy="22" r="6" fill="#f59e0b"/>
+  <circle cx="64" cy="22" r="6" fill="#10b981"/>
+  <text x="90" y="27" fill="#d1d5db" font-size="18" font-family="Menlo, Consolas, Monaco, monospace">python3 -m src.main</text>
+  <g fill="#e5e7eb" font-size="17" font-family="Menlo, Consolas, Monaco, monospace">
+    <text x="20" y="80">Loaded songs: 18</text>
+    <text x="20" y="120">Top recommendations:</text>
+    <text x="20" y="160">1. Sunrise City - Neon Echo</text>
+    <text x="20" y="190">   Score: 6.66</text>
+    <text x="20" y="220">   Reasons: genre match (+2.00); mood match (+1.00); energy closeness (+1.96); valence closeness (+0.96); tempo closeness (+0.74)</text>
+    <text x="20" y="250">------------------------------------------------------------------------</text>
+    <text x="20" y="280">2. Gym Hero - Max Pulse</text>
+    <text x="20" y="310">   Score: 5.38</text>
+    <text x="20" y="340">   Reasons: genre match (+2.00); energy closeness (+1.74); valence closeness (+0.97); tempo closeness (+0.67)</text>
+    <text x="20" y="370">------------------------------------------------------------------------</text>
+    <text x="20" y="400">3. Rooftop Lights - Indigo Parade</text>
+    <text x="20" y="430">   Score: 4.63</text>
+    <text x="20" y="460">   Reasons: mood match (+1.00); energy closeness (+1.92); valence closeness (+0.99); tempo closeness (+0.72)</text>
+    <text x="20" y="490">------------------------------------------------------------------------</text>
+    <text x="20" y="520">4. City Prism - Velvet Circuit</text>
+    <text x="20" y="550">   Score: 3.63</text>
+    <text x="20" y="580">   Reasons: energy closeness (+1.98); valence closeness (+0.94); tempo closeness (+0.71)</text>
+    <text x="20" y="610">------------------------------------------------------------------------</text>
+    <text x="20" y="640">5. Golden Hour Pulse - Solar Kidi</text>
+    <text x="20" y="670">   Score: 3.48</text>
+    <text x="20" y="700">   Reasons: energy closeness (+1.84); valence closeness (+0.94); tempo closeness (+0.70)</text>
+  </g>
+</svg>

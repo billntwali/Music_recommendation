@@ -1,0 +1,24 @@
+Loaded songs: 18
+
+Top recommendations:
+
+1. Sunrise City - Neon Echo
+   Score: 6.66
+   Reasons: genre match (+2.00); mood match (+1.00); energy closeness (+1.96); valence closeness (+0.96); tempo closeness (+0.74)
+------------------------------------------------------------------------
+2. Gym Hero - Max Pulse
+   Score: 5.38
+   Reasons: genre match (+2.00); energy closeness (+1.74); valence closeness (+0.97); tempo closeness (+0.67)
+------------------------------------------------------------------------
+3. Rooftop Lights - Indigo Parade
+   Score: 4.63
+   Reasons: mood match (+1.00); energy closeness (+1.92); valence closeness (+0.99); tempo closeness (+0.72)
+------------------------------------------------------------------------
+4. City Prism - Velvet Circuit
+   Score: 3.63
+   Reasons: energy closeness (+1.98); valence closeness (+0.94); tempo closeness (+0.71)
+------------------------------------------------------------------------
+5. Golden Hour Pulse - Solar Kidi
+   Score: 3.48
+   Reasons: energy closeness (+1.84); valence closeness (+0.94); tempo closeness (+0.70)
+------------------------------------------------------------------------
