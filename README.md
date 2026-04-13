@@ -17,17 +17,30 @@ Replace this paragraph with your own summary of what your version does.
 
 ## How The System Works
 
-Explain your design in plain language.
+Real recommendation systems combine collaborative filtering (patterns from similar users) with content signals (attributes of the song or video itself). Platforms like Spotify, YouTube, and TikTok usually generate a pool of candidate items first, then rank that pool with many engagement signals (likes, skips, watch time, and history). In this simulator, I will prioritize a transparent content-based approach so each recommendation can be explained clearly.
 
-Some prompts to answer:
+Features used in each `Song`:
+- `genre`
+- `mood`
+- `energy`
+- `tempo_bpm`
+- `valence`
+- `danceability`
+- `acousticness`
 
-- What features does each `Song` use in your system
-  - For example: genre, mood, energy, tempo
-- What information does your `UserProfile` store
-- How does your `Recommender` compute a score for each song
-- How do you choose which songs to recommend
+Features used in `UserProfile` (planned for this simulation):
+- `favorite_genre`
+- `favorite_mood`
+- `target_energy`
+- `target_valence`
+- `preferred_tempo_bpm`
+- `likes_acoustic`
 
-You can include a simple diagram or bullet list if helpful.
+Algorithm recipe (Phase 1 draft):
+- Use a weighted score per song (genre match + mood match + numeric closeness for energy/valence/tempo).
+- For numeric fields, reward closeness with `1 - normalized_distance` so songs nearer the target score higher.
+- Apply larger weights to genre and mood than tempo so vibe identity matters most.
+- Rank songs by total score (highest first) and return the top `k`.
 
 ---
 
@@ -208,4 +221,3 @@ A few sentences about what you learned:
 - What surprised you about how your system behaved
 - How did building this change how you think about real music recommenders
 - Where do you think human judgment still matters, even if the model seems "smart"
-
